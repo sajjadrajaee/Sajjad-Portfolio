@@ -2,24 +2,29 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   font-family: 'Poppins', sans-serif;
-  background: url("images/background-image.svg");
 }
 
-header {
+.container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+article {
+  background: url("images/background-image.svg");
 }
 
 #menu-icon {
   width: 20px;
   height: 20px;
-  background-color: #6070ff;
+  align-items: center;
 }
 
 #logo {
   color: #6070ff;
   font-size: 20px;
   font-weight: bold;
+  align-items: center;
 }
 
 #primary-text {
