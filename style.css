@@ -1,4 +1,4 @@
-body{
+body {
   padding-left: 30px;
   padding-right: 30px;
   font-family: 'Poppins', sans-serif;
@@ -13,11 +13,11 @@ header {
 #menu-icon {
   width: 20px;
   height: 20px;
-  background-color: #6070FF;
+  background-color: #6070ff;
 }
 
 #logo {
-  color: #6070FF;
+  color: #6070ff;
   font-size: 20px;
   font-weight: bold;
 }
@@ -25,7 +25,7 @@ header {
 #primary-text {
   display: flex;
   padding-right: 60px;
-  font-Weight: Bold;
+  font-weight: bold;
   font-size: 40px;
   padding-top: 70px;
   line-height: 1.3;
@@ -40,7 +40,7 @@ header {
 
 #connect {
   display: flex;
-  color: #6070FF;
+  color: #6070ff;
   font-size: 16px;
   padding-top: 15px;
 }
