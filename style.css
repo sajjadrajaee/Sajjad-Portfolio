@@ -50,9 +50,9 @@ article {
   padding-top: 15px;
 }
 
-#social {
+#socialmedia {
   padding-top: 10px;
-  padding-right: 200px;
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  gap:20px;
 }
