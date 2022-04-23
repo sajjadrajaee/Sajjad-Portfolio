@@ -3,9 +3,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  background-color: #f7f7f9;
 }
 
-.container {
+.toolbarContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,14 +15,12 @@ body {
 header {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-article {
-  background: no-repeat center/100% url("images/background-image.svg");
-  padding-top: 30px;
+  background-color: white;
 }
 
 .Introduction {
+  background: no-repeat center/100% url("images/background-image.svg");
+  background-color: white;
   border-bottom-left-radius: 80px;
 }
 
@@ -74,4 +73,41 @@ article {
   flex-wrap: wrap;
   display: flex;
   gap: 20px;
+}
+
+/* Portfolio Section */
+
+.card {
+  border: #dfe1e6 1px solid;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 18px;
+  margin-top: 30px;
+}
+
+.cardContainer {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.cardContainer h3 {
+  font-size: 30px;
+  margin: 15px 0;
+  font-weight: bold;
+  color: #172B4D;
+  line-height: 44px;
+}
+
+.cardContainer h4 {
+  color: rgb(117, 117, 117);
+  margin: 0 0 0 0;
+}
+
+.cardContainer span{
+  color: black;
+}
+
+p {
+  color: #344563;
 }
