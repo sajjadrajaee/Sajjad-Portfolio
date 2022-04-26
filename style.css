@@ -244,3 +244,105 @@ hr {
   font-size: 16px;
   line-height: 24px;
 }
+
+/* footer section  */
+#footer {
+  display: flex;
+  background-color: #6070ff;
+  margin-top: 50px;
+  flex-direction: column;
+  border-top-left-radius: 80px;
+  background-image: url("images/contact-shapes-mobile.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 779px;
+}
+
+#footer h2 {
+  height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #ffff;
+  padding: 103px 24px 12px;
+  margin: 0;
+}
+
+#footer p {
+  height: 102px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  margin: 12px 24px 0 24px;
+}
+
+input {
+  background: white;
+  border-radius: 8px;
+}
+
+#name {
+  width: calc(100% - 50px);
+  align-items: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 15px 38px 15px 16px;
+  margin: 87px 24px 20px 24px;
+  border: 1px solid #cfd8dc;
+  box-sizing: border-box;
+}
+
+#email {
+  width: calc(100% - 50px);
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 15px 38px 15px 16px;
+  margin: 0 24px 18px 24px;
+  border: 1px solid #cfd8dc;
+}
+
+#message {
+  width: calc(100% - 50px);
+  box-sizing: border-box;
+  height: 170px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 0 38px 15px 16px;
+  margin: 0 24px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+::placeholder {
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#submit-button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px 16px;
+  margin: 18px 24px;
+  color: #6070ff;
+  border: solid 1px;
+}
+
+#submit-button:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+#submit-button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
