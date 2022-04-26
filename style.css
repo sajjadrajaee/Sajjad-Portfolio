@@ -244,3 +244,37 @@ hr {
   font-size: 16px;
   line-height: 24px;
 }
+
+/* footer section  */
+#footer {
+  display: flex;
+  background-color: #6070ff;
+  margin-top: 50px;
+  flex-direction: column;
+  border-top-left-radius: 80px;
+
+}
+
+#footer h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #ffff;
+}
+
+#footer p {
+  font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #ebebff;
+text-align: center;
+}
+
+input {
+  width: 100%;
+  background: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+
+}
