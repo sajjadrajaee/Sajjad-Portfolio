@@ -261,6 +261,7 @@ hr {
   line-height: 52px;
   text-align: center;
   color: #ffff;
+  padding: 103px 0 12px;
 }
 
 #footer p {
@@ -269,6 +270,7 @@ font-size: 20px;
 line-height: 28px;
 color: #ebebff;
 text-align: center;
+padding: 0 24px 36px;
 }
 
 input {
