@@ -346,3 +346,11 @@ input {
   background-color: #2230d2;
   color: #fff;
 }
+
+input:hover::placeholder {
+  transform: translate(5px);
+}
+
+textarea:hover::placeholder {
+  transform: translate(5px);
+}
