@@ -142,7 +142,19 @@ p {
   border-radius: 8px;
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
+  transition-duration: 0.3s;
 }
+
+.button:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
 
 /* About Me Section */
 
@@ -335,6 +347,7 @@ input {
   margin: 18px 24px;
   color: #6070ff;
   border: solid 1px;
+  transition-duration: 0.3s;
 }
 
 #submit-button:hover {
@@ -345,12 +358,4 @@ input {
 #submit-button:active {
   background-color: #2230d2;
   color: #fff;
-}
-
-input:hover::placeholder {
-  transform: translate(5px);
-}
-
-textarea:hover::placeholder {
-  transform: translate(5px);
 }
