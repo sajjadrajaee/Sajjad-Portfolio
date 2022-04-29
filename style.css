@@ -118,6 +118,10 @@ p {
   padding: 0;
 }
 
+.img {
+  transform: scale(1.05);
+}
+
 .cardContainer li {
   font-weight: 500;
   font-size: 12px;
