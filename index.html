@@ -11,7 +11,9 @@
 
 <body>
   <header>
-    <h2 id="logo">Sajjad</h2>
+    <a href="#">
+      <h2 id="logo">Sajjad</h2>
+    </a>
     <nav id="mobile-nav">
       <img src="images/menu-icon.png" id="menu-icon" alt="menu icon" />
     </nav>
@@ -27,12 +29,14 @@
     <article>
       <section class="Introduction">
         <div class="IntroContainer">
-          <div id="primary-text">I’m Sajjad Glad<br /> to see you!</div>
+          <h1 id="primary-text">I’m Sajjad Glad<br /> to see you!</h1>
           <div id="secondary-text">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you
-            like what you see and have a project you need coded, don’t
-            hestiate to contact me.
+            <p>
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
           </div>
           <div class="connect">LET'S CONNECT</div>
           <div class="socialmedia">
@@ -274,7 +278,7 @@
             <h4>JavaScript</h4>
           </li>
           <li class="list-items">
-            <img src="images/html.png" alt="HTML" />
+            <img src="images/HTML.png" alt="HTML" />
             <h4>HTML</h4>
           </li>
           <li class="list-items">
@@ -293,17 +297,20 @@
       </section>
     </article>
   </section>
-  <section id="footer">
-    <h2>Contact me</h2>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project that
-      needs coding. I’d love to help with it </p>
-    <form action="https://formspree.io/f/mbjwpgvg" method="POST">
-      <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="30" required><br>
-      <input type="email" id="email" name="email" placeholder="Enter your email id" required><br>
-      <textarea id="message" name="message" placeholder="Write your message here" maxlength="500" required></textarea>
-      <input id="submit-button" type="submit" value="Get In Touch">
-    </form>
-  </section>
+  <div class="contact-container">
+    <section id="footer">
+      <h2>Contact me</h2>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that
+        needs coding. I’d love to help with it </p>
+      <form action="https://formspree.io/f/mbjwpgvg" method="POST">
+        <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="30" required><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email id" required><br>
+        <textarea id="message" name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+        <input id="submit-button" type="submit" value="Get In Touch">
+      </form>
+    </section>
+  </div>
+  
 </body>
 
 </html>
