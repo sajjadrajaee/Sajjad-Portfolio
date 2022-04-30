@@ -460,7 +460,7 @@
     padding: 5px 10px;
   }
 
-  #desktop-nav > ul > li {
+  #desktop-nav > ul > a > li {
     justify-content: space-between;
     margin: 0 16px;
     font-size: 15px;
