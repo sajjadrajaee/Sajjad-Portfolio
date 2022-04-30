@@ -17,6 +17,8 @@ Live demo is not available
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
+- clone the project from GitHub: [@sajjadrajaee](https://github.com/sajjadrajaee/sajjad-portfolio)
+- run the code on a text editor
 
 ### Prerequisites
 
