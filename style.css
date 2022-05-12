@@ -394,7 +394,6 @@
     background-image: url("images/contact-shapes-mobile.svg");
     background-position: right;
     background-repeat: no-repeat;
-    height: 779px;
   }
 
   #footer > h2 {
@@ -484,6 +483,10 @@
   #submit-button:active {
     background-color: #2230d2;
     color: #fff;
+  }
+
+  .error-message {
+    margin: 14px auto 0 auto;
   }
 }
 
@@ -829,7 +832,6 @@
     background-image: url("images/contactbackground.svg");
     background-position: right;
     background-repeat: no-repeat;
-    height: 779px;
     padding-bottom: 60px;
   }
 
@@ -843,7 +845,7 @@
     margin: 142px 0 50px 0;
   }
 
-  #footer p {
+  .footer-note {
     /* height: 102px; */
     font-weight: 400;
     font-size: 20px;
@@ -944,5 +946,14 @@
   #resume-button:active {
     background-color: #2230d2;
     color: #fff;
+  }
+
+  .error-message {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ebebff;
+    text-align: center;
+    margin: 14px auto 0 auto;
   }
 }
