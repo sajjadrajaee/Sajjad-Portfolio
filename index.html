@@ -10,27 +10,30 @@
 </head>
 
 <body>
-  <header>
-    <a href="#">
-      <h2 id="logo">Sajjad</h2>
-    </a>
-    <nav id="mobile-nav">
-      <img src="images/menu-icon.png" id="menu-icon" alt="menu icon" />
-    </nav>
-    <nav id="desktop-nav">
-      <ul>
-        <li>
-          <a href="portfolio.html">Portfolio </a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">Sajjad</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section class="cover">
   <section id="mainSection">
     <article>
       <section class="Introduction">
@@ -248,7 +251,7 @@
         </div>
       </div>
     </article>
-    <article class="about">
+    <article class="about" id="about">
       <section class="aboutSection">
         <div class="aboutContainer">
           <div id="primary-text-about">About <br /> Myself</div>
@@ -306,7 +309,7 @@
       </section>
     </article>
   </section>
-  <div class="contact-container">
+  <div class="contact-container" id="contact">
     <section id="footer">
       <h2>Contact me</h2>
       <p>If you have an application you are interested in developing, a feature that you need built or a project that
@@ -319,7 +322,8 @@
       </form>
     </section>
   </div>
-
+</section>
+<script src="script.js"></script>
 </body>
 
 </html>
