@@ -407,14 +407,14 @@
     margin: 0;
   }
 
-  #footer p {
+  .footer-note {
     height: 102px;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #ebebff;
     text-align: center;
-    margin: 12px 24px 0 24px;
+    margin: 45px 24px 0 24px;
   }
 
   input {
@@ -486,7 +486,13 @@
   }
 
   .error-message {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ebebff;
     margin: 14px auto 0 auto;
+    text-align: center;
   }
 }
 
@@ -852,7 +858,8 @@
     line-height: 28px;
     color: #ebebff;
     text-align: center;
-    margin: 12px 436px 0 436px;
+    margin: 12px auto 0 auto;
+    padding: 0 200px;
   }
 
   #name {
@@ -950,7 +957,8 @@
 
   .error-message {
     font-weight: 400;
-    font-size: 20px;
+    font-style: italic;
+    font-size: 16px;
     line-height: 28px;
     color: #ebebff;
     text-align: center;
