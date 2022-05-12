@@ -1,23 +1,14 @@
-function ChangeMenu() {
-  if (document.getElementById('menu-icon').src != 'images/close.webp') {
-    document.getElementById('menu-icon').src = 'images/close.webp';
-  } else {
-    document.getElementById('menu-icon').src = 'images/menu-icon.png';
-  }
-}
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const body = document.querySelector('body');
 
-const navLinks = document.getElementById('navLinks');
-const burger = document.getElementById('burger');
-const hideMenu = document.getElementById('closeIcon');
-const closeMenu = document.getElementById('navItems');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  body.classList.add('blur');
+});
 
-burger.onclick = function burger() {
-  navLinks.style.right = '0';
-};
-hideMenu.onclick = function hideMenu() {
-  navLinks.style.right = '-100%';
-};
-
-closeMenu.onclick = function hideMenu() {
-  navLinks.style.right = '-100%';
-};
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
