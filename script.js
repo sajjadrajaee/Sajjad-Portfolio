@@ -1,11 +1,17 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const body = document.querySelector('body');
+const main = document.querySelector('.cover');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
-  body.classList.add('blur');
+  if (main.classList.contains('active')) {
+    main.classList.remove('active');
+  }
+
+  else {
+    main.classList.toggle('active');
+  }
 });
 
 document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
