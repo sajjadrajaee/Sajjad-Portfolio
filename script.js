@@ -7,9 +7,7 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   if (main.classList.contains('active')) {
     main.classList.remove('active');
-  }
-
-  else {
+  } else {
     main.classList.toggle('active');
   }
 });
