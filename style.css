@@ -250,7 +250,7 @@
   .button {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 135px;
+    width: 151px;
     height: 50px;
     color: #0937ab;
     border: 1px solid #396df2;
@@ -494,6 +494,114 @@
     margin: 14px auto 0 auto;
     text-align: center;
   }
+
+  
+  .popup-container{
+    pointer-events: none;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+    max-height: 100%;
+    position: fixed;
+    border: 1px solid #efe1e6;
+    background: rgb(0, 96, 255, 0.3);
+    opacity: 0;
+  }
+
+  .popup-container.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .popup {
+    width: calc(80% - 30px);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .cover.show{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .popup.active {
+    top: 100%;
+    transform: scale(1);
+    visibility: visible;
+  }
+  
+  .close {
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-image {
+    display: block;
+width: 100%;
+  }
+
+  .popup h4 {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 18px;
+  }
+
+  .popup-details {
+    width: 100%;
+  }
+
+  .popup-tech {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .popup-tech > ul {
+    margin: 20px 0;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 30px;
+    width: 170px;
+  }
+
+  .popup-icon {
+    width: 20px;
+  }
+
+  .buttons > a {
+    color: blue;
+  }
+  .popup ul > li {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6070ff;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    background-color: #ebebff;
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
 }
 
 /* Desktop Style */
@@ -649,7 +757,6 @@
   }
 
   .img {
-    /* width: 544px; */
     height: 448px;
     margin: 24px 0 24px 24px;
   }
@@ -696,7 +803,7 @@
 
   .button {
     margin: 40px 0 20px 48px;
-    width: 145px;
+    width: 153px;
     height: 50px;
     color: #0937ab;
     border: 1px solid #396df2;
@@ -704,6 +811,10 @@
     border-radius: 8px;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+  }
+
+  #hr {
+    margin: 30px 20px 0 40px;
   }
 
   .right {
@@ -963,5 +1074,111 @@
     color: #ebebff;
     text-align: center;
     margin: 14px auto 0 auto;
+  }
+
+  .popup-container{
+    pointer-events: none;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+    max-height: 100%;
+    position: fixed;
+    border: 1px solid #efe1e6;
+    background: rgb(0, 96, 255, 0.3);
+    opacity: 0;
+  }
+
+  .popup-container.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .popup {
+    width: calc(80% - 30px);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .cover.show{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .popup.active {
+    top: 100%;
+    transform: scale(1);
+    visibility: visible;
+  }
+  
+  .close {
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-image {
+    display: block;
+width: 100%;
+  }
+
+  .popup h4 {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #popup-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    padding: 18px;
+  }
+
+  .popup-details {
+    width: 70%;
+  }
+
+  .popup-tech {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .popup-tech > ul {
+    margin-left: 36px;
+  }
+
+  .buttons {
+    display: flex;
+
+  }
+
+  .popup-icon {
+    width: 20px;
+  }
+
+  .buttons > a {
+    color: blue;
+  }
+  .popup ul > li {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6070ff;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    background-color: #ebebff;
+    border-radius: 8px;
+    padding: 5px 10px;
   }
 }
