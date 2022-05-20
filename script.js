@@ -41,12 +41,6 @@ btn.addEventListener('click', () => {
   popupConstainer.classList.toggle('show');
 });
 
-closepopup.addEventListener('click', () => {
-  popupConstainer.classList.toggle('show');
-});
-
-// popup section 
-
 const projects = [
   {
     title: 'Tonic',
@@ -60,7 +54,7 @@ const projects = [
     seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description']},
-    cssStyle: 'left',
+    cssStyle: 'cardContainer',
   },
 
   {
@@ -75,7 +69,7 @@ const projects = [
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
-    cssStyle: 'right',
+    cssStyle: 'cardContainerRight',
   },
 
   {
@@ -90,7 +84,7 @@ const projects = [
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description']},
-    cssStyle: 'left',
+    cssStyle: 'cardContainer',
   },
 
   {
@@ -105,7 +99,8 @@ const projects = [
     seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
     htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
-    cssStyle: 'right',
+    cssStyle: 'cardContainerRight',
+    colse: 'close',
   },
 ];
 
@@ -118,7 +113,7 @@ projects.forEach((project, index) => {
   div.className = 'main-container';
   div.innerHTML = 
   `     <article class="left">
-      <div class="cardContainer">
+      <div class=${project.cssStyle}>
         <img class="img" src= ${project.image} alt="First Image" />
         <div class="detail">
           <h3>${project.title}</h3>
@@ -143,7 +138,7 @@ projects.forEach((project, index) => {
     <article class="card">
         <div class="cardContainer">
           <img class="img" src = ${project.image} alt="First Image" />
-          <h3>${project.image}</h3>
+          <h3>${project.title}</h3>
           <h4>
             <span>CANOPY</span>&nbsp;
             <img src="images/Counter.png" alt="counter" />&nbsp; Back End
@@ -157,7 +152,7 @@ projects.forEach((project, index) => {
             <li>CSS</li>
             <li>javascript</li>
           </ul>
-          <button  value = ${projects.indexOf(project)} class="button">${project.seeproject}</button>
+          <button class="button"  value = ${projects.indexOf(project)}> ${project.seeproject}</button>
         </div>
       </article>`;  
   section.appendChild(div)
@@ -168,53 +163,27 @@ projects.forEach((project, index) => {
 var modal = document.getElementById("myModal");
 const btn1 = document.querySelectorAll('.button')
 
-
-
-  
-
+const title_popup = document.querySelector('.popup-title');
+const image_popup = document.querySelector('.back-image');
 for (i of btn1) {
   i.addEventListener('click', function() {
     modal.style.display = "block";
     var x = this.value
    console.log(this.value[0])
-  modal.innerHTML = 
-  ` <div class="popup-card">
-        <div><h1 class = "popup-h1">${projects[x].title}</h1></div>
-        <div class = "popup-frame">
-        <ul class="popup-frame">
-          <li class="detail-1">CANOPY</li>
-          <li class="detail">BACK END DEV</li>
-          <li class="detail">2015</li>
-        </ul>
-        </div>
-        <div class = "popup-img-card" style = "background-image: url('.${projects[x].image}'); max-height: 300px; "></div>
-        <div class = "popup-description">
-          <div class = "desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-           when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, </div>
-          <div class = "pop-frame">       
-            <div class="tags">
-            <button class="tag">html</button>
-            <button class="tag">css</button>
-            <button class="tag">javascript</button>
-           </div>
-           <div class="tags popup-tag">
-           <button class="tag">github</button>
-           <button class="tag">ruby</button>
-           <button class="tag">Bootstraps</button>
-           </div>
-           <hr class = "popup-hr"> 
-           <div class = "popup-link-button">
-            <button class = "popup-button">See More <img src = "./image/pop.svg"></button>
-            <button class = "popup-button">See More <img src = "./image/Icon-GitHub.svg"></button>
-          </div>
-        </div>        
-    
-      </div> `;
+  // modal.innerHTML = 
+  // `  `;
+  title_popup.innerHTML =  `<h2 class="popup-h">${projects[x].title}</h2>`;
+  image_popup.innerHTML=`<div class = "popup-img-card" style = "background-image: url('${projects[x].image}'); max-height: 300px; "></div>
+  `
   });
 }
+
+const closeIcon = document.querySelector('.closeicon');
+closeIcon.addEventListener('click', () => {
+  modal.style.display = "none";
+});
+
+
 
 
 window.onclick = function(event) {
