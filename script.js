@@ -33,7 +33,6 @@ form.addEventListener('submit', (event) => {
 // popup section
 const btn = document.querySelector('.button');
 const popupactive = document.querySelector('.popup');
-const closepopup = document.querySelector('.close');
 const popupConstainer = document.querySelector('.popup-container');
 
 btn.addEventListener('click', () => {
@@ -53,7 +52,7 @@ const projects = [
     livelink: { link: 'http://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description']},
+    htmlClass: { article: ['grid-item', 'card'], cardImage: ['card-image'], cardDescription: ['card-description'] },
     cssStyle: 'cardContainer',
   },
 
@@ -68,7 +67,7 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
+    htmlClass: { article: ['grid-item', 'card', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
     cssStyle: 'cardContainerRight',
   },
 
@@ -83,7 +82,7 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'https://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description']},
+    htmlClass: { article: ['grid-item', 'card', 'flex-item-2', 'hide-ruby'], cardImage: ['card-image'], cardDescription: ['card-description'] },
     cssStyle: 'cardContainer',
   },
 
@@ -98,21 +97,17 @@ const projects = [
     livelink: { link: 'https://felix45.github.io/portfolio', text: 'See live' },
     seesource: { link: 'http://github.com/felix45/portfolio', text: 'See Source' },
     seeproject: 'See Project',
-    htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1']},
+    htmlClass: { article: ['grid-item', 'card', 'flex-item-3', 'flex-item-last', 'hide-ruby'], cardImage: ['card-image', 'flex-item-2'], cardDescription: ['card-description', 'flex-item-1'] },
     cssStyle: 'cardContainerRight',
     colse: 'close',
   },
 ];
 
-
 const section = document.getElementById('portfolio');
-projects.forEach((project, index) => {
-
-  
+projects.forEach((project) => {
   const div = document.createElement('div');
   div.className = 'main-container';
-  div.innerHTML = 
-  `     <article class="left">
+  div.innerHTML = `     <article class="left">
       <div class=${project.cssStyle}>
         <img class="img" src= ${project.image} alt="First Image" />
         <div class="detail">
@@ -154,43 +149,28 @@ projects.forEach((project, index) => {
           </ul>
           <button class="button"  value = ${projects.indexOf(project)}> ${project.seeproject}</button>
         </div>
-      </article>`;  
-  section.appendChild(div)
+      </article>`;
+  section.appendChild(div);
 });
 
+const modal = document.getElementById('myModal');
+const btn1 = document.querySelectorAll('.button');
 
+const titlePopup = document.querySelector('.popup-title');
+const imagePopup = document.querySelector('.back-image');
 
-var modal = document.getElementById("myModal");
-const btn1 = document.querySelectorAll('.button')
-
-const title_popup = document.querySelector('.popup-title');
-const image_popup = document.querySelector('.back-image');
-for (i of btn1) {
-  i.addEventListener('click', function() {
-    modal.style.display = "block";
-    var x = this.value
-   console.log(this.value[0])
-  // modal.innerHTML = 
-  // `  `;
-  title_popup.innerHTML =  `<h2 class="popup-h">${projects[x].title}</h2>`;
-  image_popup.innerHTML=`<div class = "popup-img-card" style = "background-image: url('${projects[x].image}'); max-height: 300px; "></div>
-  `
+btn1.forEach((btn) => {
+  btn.addEventListener('click', function () {
+    modal.style.display = 'block';
+    const x = this.value;
+    console.log(this.value[0]);
+    titlePopup.innerHTML = `<h2 class="popup-h">${projects[x].title}</h2>`;
+    imagePopup.innerHTML = `<div class = "popup-img-card" style = "background-image: url('${projects[x].image}'); max-height: 300px; "></div>
+  `;
   });
-}
+});
 
 const closeIcon = document.querySelector('.closeicon');
 closeIcon.addEventListener('click', () => {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 });
-
-
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-
