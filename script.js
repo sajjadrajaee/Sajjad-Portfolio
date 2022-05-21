@@ -59,7 +59,7 @@ const projects = [
   {
     title: 'Multi-Post Stories',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
-    image: '/images/SnapshootPortfolio.png',
+    image: 'images/SnapshootPortfolio.png',
     alt: 'Multi-Post stories project screenshot',
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -74,7 +74,7 @@ const projects = [
   {
     title: 'Facebook 360',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
-    image: '/images/SnapshootPortfolio2.png',
+    image: 'images/SnapshootPortfolio2.png',
     alt: 'Facebook 360 project screenshot',
     description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -89,7 +89,7 @@ const projects = [
   {
     title: 'Uber Navigation',
     roles: { company: 'Uber', position: ['Lead Developer', '2018'] },
-    image: '/images/SnapshootPortfolio3-1.png',
+    image: 'images/SnapshootPortfolio3-1.png',
     alt: 'Uber Navigation project screenshot',
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car..',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -165,7 +165,7 @@ btn1.forEach((btn) => {
     const x = this.value;
     console.log(this.value[0]);
     titlePopup.innerHTML = `<h2 class="popup-h">${projects[x].title}</h2>`;
-    imagePopup.innerHTML = `<div class = "popup-img-card" style = "background-image: url('${projects[x].image}'); max-height: 300px; "></div>
+    imagePopup.innerHTML = `<div class = "popup-img-card" style = "background-image: url('${projects[x].image}');"></div>
   `;
   });
 });

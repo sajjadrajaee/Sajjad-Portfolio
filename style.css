@@ -1297,7 +1297,6 @@
 
   .popup-card {
     background-color: rgb(255, 255, 255);
-    height: 680px;
     width: 75%;
     margin: auto;
     margin-top: 50px;
@@ -1330,7 +1329,7 @@
   }
 
   .popup-img-card {
-    height: 568px;
+    height: 586px;
     background-repeat: no-repeat;
     background-size: 95%;
     margin-left: 15px;
