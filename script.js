@@ -201,8 +201,8 @@ textArea.addEventListener('change', (event) => {
 function retrieveFormData() {
   const formData = JSON.parse(localStorage.getItem('formData'));
   if (formData) {
-    document.getElementById('name').value = formData.email;
-    document.getElementById('email').value = formData.name;
+    document.getElementById('name').value = formData.name;
+    document.getElementById('email').value = formData.email;
     document.getElementById('message').value = formData.message;
   }
 }
